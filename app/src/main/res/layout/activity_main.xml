@@ -33,6 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginLeft="150dp"
+            android:id="@+id/img"
             android:src="@drawable/aguille" />
     </RelativeLayout>
 
@@ -52,6 +53,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="1"
+            android:id="@+id/edebit"
             android:textSize="25sp" />
 
         <TextView
@@ -79,6 +81,7 @@
             android:layout_margin="5dp"
             android:enabled="false"
             android:layout_weight="1"
+            android:id="@+id/edownload"
             android:textSize="25sp" />
 
         <TextView
@@ -106,6 +109,7 @@
             android:layout_margin="5dp"
             android:enabled="false"
             android:layout_weight="1"
+            android:id="@+id/eupload"
             android:textSize="25sp" />
 
         <TextView
@@ -133,6 +137,7 @@
             android:layout_margin="5dp"
             android:layout_weight="1"
             android:enabled="false"
+            android:id="@+id/ers"
             android:textSize="25sp" />
 
         <TextView
@@ -187,13 +192,15 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="1"
-            android:text="Calculer" />
+            android:text="Calculer"
+            android:onClick="calc"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="1"
+            android:onClick="init"
             android:text="Initialiser" />
     </LinearLayout>
 </LinearLayout>
